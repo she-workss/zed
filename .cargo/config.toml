@@ -2,6 +2,14 @@
 # v0 mangling scheme provides more detailed backtraces around closures
 rustflags = ["-C", "symbol-mangling-version=v0", "--cfg", "tokio_unstable"]
 
+[patch.crates-io]
+cosmic-text = { git = "https://github.com/she-workss/cosmic-text.git" }
+
+[patch."https://github.com/kvark/blade"]
+blade-graphics = { git = "https://github.com/she-workss/blade.git" }
+blade-macros = { git = "https://github.com/she-workss/blade.git" }
+blade-util = { git = "https://github.com/she-workss/blade.git" }
+
 [alias]
 xtask = "run --package xtask --"
 
